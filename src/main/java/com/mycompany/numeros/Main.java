@@ -11,17 +11,13 @@ import javax.swing.*;
 public class Main {
     
 public static void main(String[] args) {
-
-
-
   insertar_imprimir();
-
-
-  
     }
+
 public static void insertar_imprimir(){
-  int numero = 0;
+    int numero = 0;
     numero= Integer.parseInt(JOptionPane.showInputDialog("Ingresar numero"));
+
     if (parOimpar(numero)) {
         System.out.println("Es par");
         if (numero==2) {
@@ -31,6 +27,7 @@ public static void insertar_imprimir(){
         System.out.println("Es primo");
         System.out.println("Es impar");
 }
+
 }
 
 
@@ -41,8 +38,5 @@ public static Boolean parOimpar(int numero){
     }else{
         return  false;
 }
-}
-
-
-    
+}    
 }
